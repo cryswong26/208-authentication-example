@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 
 # Keep this out of source code repository - save in a file or a database
 VALID_USERNAME_PASSWORD_PAIRS = {
-    'Mickey': 'Mouse', 'Donald': 'Duck'
+    'Mickey': 'Mouse', 'Crystal': 'Cohort17'
 }
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
@@ -26,12 +26,12 @@ app.layout = html.Div([
     dcc.Dropdown(
         id='dropdown',
         options=[{'label': i, 'value': i} for i in [1, 2, 3, 4, 5]],
-        value=1
+        value=1 #starting value of the dropdown
     ),
 
     html.Div(id='graph-title'),
     dcc.Graph(id='graph'),
-    html.A('Code on Github', href='https://github.com/austinlasseter/dash-auth-example'),
+    html.A('Code on Github', href='https://github.com/cryswong26/208-authentication-example'),
     html.Br(),
     html.A("Data Source", href='https://dash.plotly.com/authentication'),
 ], className='container')
