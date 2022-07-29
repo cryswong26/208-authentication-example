@@ -44,7 +44,7 @@ app.layout = html.Div([
 def update_graph(dropdown_value):
 
     #x_values = [-3,-2,-1,0,1,2,3]
-    x_values = [-1,-.5,0,.5,1]
+    x_values = [-2,-1,-.5,0,.5,1,2]
     #y_values = [x**dropdown_value for x in x_values]
     y_values = [(x**2-x**4)**.5 for x in x_values]
     #y_values = [x*math.sin(1/x) for x in x_values]
