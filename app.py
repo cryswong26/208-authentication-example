@@ -21,7 +21,7 @@ auth = dash_auth.BasicAuth(
 )
 
 app.layout = html.Div([
-    html.H1('Welcome to the app'),
+    html.H1('Welcome to my app'),
     html.H3('You are successfully authorized'),
     dcc.Dropdown(
         id='dropdown',
@@ -43,8 +43,10 @@ app.layout = html.Div([
     )
 def update_graph(dropdown_value):
 
-    x_values = [-3,-2,-1,0,1,2,3]
-    y_values = [x**dropdown_value for x in x_values]
+    #x_values = [-3,-2,-1,0,1,2,3]
+    x_values = [-1,-.5,0,.5,1]
+    #y_values = [x**dropdown_value for x in x_values]
+    y_values = [(x**2-x**4)**.5 for x in x_values]
     colors=['black','red','green','blue','orange','purple']
     graph_title='Graph of {}'.format(str(dropdown_value))
 
