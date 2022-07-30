@@ -22,7 +22,7 @@ auth = dash_auth.BasicAuth(
 
 app.layout = html.Div([
     html.H1('Welcome to my app'),
-    html.H3('You are successfully authorized'),
+    html.H3('Here are some pink parabolas'),
     dcc.Dropdown(
         id='dropdown',
         options=[{'label': i, 'value': i} for i in [1, 2, 3, 4, 5]],
